@@ -109,7 +109,6 @@ pymongo==4.6.1
 PyMsgBox==1.0.9
 pyparsing==3.1.1
 pyperclip==1.8.2
-pypiwin32==223
 PyRect==0.2.0
 pyscreenshot==3.1
 PyScreeze==0.1.29
