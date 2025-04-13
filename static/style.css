@@ -1,0 +1,182 @@
+body {
+        font-family: 'Inter', sans-serif;
+        background-color: #d2d6d5;
+        text-align: center;
+        padding: 40px;
+    }
+    .container {
+        max-width: 500px;
+        margin: auto;
+        background-color: white;
+        padding: 40px;
+        border-radius: 16px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    h1 {
+        color: #1f4e3d;
+        margin-bottom: 10px;
+    }
+    .logo {
+        width: 180px;
+        margin-bottom: 20px;
+    }
+    .welcome {
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+
+    button:hover {
+        background-color: #2b6c54;
+    }
+    .logout {
+        margin-top: 30px;
+        font-size: 14px;
+    }
+    .logout a {
+        color: #c00;
+        text-decoration: none;
+    }
+
+    
+  .botao-acao:hover {
+    background-color: #218838;
+  }
+
+form input {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+
+.error {
+    background-color: #ffcdd2;
+    color: #c62828;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.botoes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.botoes-grid button {
+    padding: 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    background-color: #1b5e40;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 80px;
+}
+
+.botoes-grid button:hover {
+    background-color: #82bc25;
+}
+
+.botao-sair {
+    padding: 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    background-color: #d32f2f; /* Vermelho */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 80px;
+    width: 100%;
+}
+
+.botao-sair:hover {
+    background-color: #b71c1c;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #e6ebe8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.login-wrapper {
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+}
+
+.login-box {
+    background-color: #ffffff;
+    padding: 50px 35px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.logo {
+    width: 140px;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #1f4e3d;
+    margin-bottom: 8px;
+}
+
+h1 span {
+    color: #3a7c5e;
+    font-weight: 600;
+}
+
+.subtitulo {
+    color: #777;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+form input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+form button {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    background-color: #1b5e40;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #2f7452;
+}
+
+.error {
+    background-color: #ffcdd2;
+    color: #c62828;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}

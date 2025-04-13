@@ -1,0 +1,48 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão de Ponto</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="/static/logo.png" alt="Logo da Empresa" class="logo">
+            <h1>Cartão de Ponto</h1>
+            <p class="welcome">Bem-vindo, <strong>{{ nome }}</strong>!</p>
+            <p class="subtitulo">Registre seu ponto</p>
+        </header>
+
+        <form action="/registrar" method="POST">
+            <input type="hidden" name="nome" value="{{ nome }}">
+            <div class="botoes-grid">
+                <button type="submit" name="acao" value="Início da Jornada">Início<br>da jornada</button>
+                <button type="submit" name="acao" value="Início de Refeição">Início<br>de Refeição</button>
+                <button type="submit" name="acao" value="Inicio de Espera">Início<br>de Espera</button>
+                <button type="submit" name="acao" value="Inicio de Repouso">Início<br>de Repouso</button>
+                <button type="submit" name="acao" value="Retorno ao Trabalho">Retorno<br>ao Trabalho</button>
+                <button type="submit" name="acao" value="Fim de Jornada">Fim<br>da jornada</button>
+                <button type="submit" name="acao" value="Inicio de Pernoite">Início<br>de Pernoite</button>
+                <button type="submit" name="acao" value="Oficina">Oficina</button>
+            </div>
+        </form>
+        
+        <!-- Botão de Sair separado, mas no mesmo estilo -->
+        <div class="botoes-grid" style="margin-top: 20px;">
+            <form action="{{ url_for('logout') }}" method="get" style="grid-column: 1 / -1;">
+                <button type="submit" class="botao-sair">Sair</button>
+            </form>
+        </div>
+        
+        {% if mensagem %}
+        <div class="alert alert-success" role="alert">
+        ✅ {{ mensagem }}
+         </div>
+        {% endif %}  
+    </div>
+       
+</body>
+</html>
